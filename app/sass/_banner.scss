@@ -1,0 +1,59 @@
+.banner {
+  // position: relative;
+  min-height: 100vh; // Минимальная высота экрана
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 80px;
+
+  background-image: url('../images/editor-574058.png');
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+  &__inner {
+    padding-top: 350px;
+    max-width: 700px;
+
+  }
+
+  &__subtitle {
+    // border: 1px solid #ccc;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--acc-color);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px;
+    // font-size: 16px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: var(--font-unbounded);
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+  }
+}
+
+.container {}
+
+.btn {}

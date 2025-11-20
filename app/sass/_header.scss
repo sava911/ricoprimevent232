@@ -1,0 +1,173 @@
+.header {
+  margin-top: 40px;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  // background-color: var(--bg-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right,
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  // padding: 20px;
+  // padding-left: 0;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(10px);
+}
+
+.header__left {
+  padding: 20px;
+}
+
+.header__right {
+  padding: 12px 20px;
+}
+
+.header__icons-tel {
+  display: none;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  // justify-content: left;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.logo span {
+  font-family: var(--font-unbounded);
+  font-size: 20px;
+  font-weight: 700;
+
+  i {
+    color: var(--acc-color);
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+.header__icons {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  // font-family: var(--font-nunito);
+  gap: 10px;
+  padding-top: 3px;
+
+
+  img {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 35px;
+    padding: 5px;
+
+    &:hover {
+      background: var(--acc-color);
+    }
+  }
+
+  a~a {
+    margin-left: 5px;
+
+  }
+
+
+}
+
+
+.header__nav-tel,
+.header__nav-icons,
+.header__nav-svg {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  font-family: var(--font-unbounded);
+
+  li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    // color: #333;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--acc-color);
+    }
+  }
+}
+
+
+
+.header__tel {
+  // color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--acc-color);
+
+  &:hover {
+    color: var(--acc-color);
+  }
+}
+
+.blue_btn {
+
+  height: 55px;
+  width: 255px;
+  // padding: 10px;
+
+}
+
+// Стили для бургер-меню
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+
+  span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--acc-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: center;
+  }
+}
