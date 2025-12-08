@@ -7,7 +7,7 @@
   box-shadow: var(--shadow-lg);
   margin-bottom: 80px;
 
-  background-image: url('../images/editor-574058.png');
+  // background-image: url('../images/editor-574058.png');
 
   background-position: center;
 
@@ -21,7 +21,9 @@
   &__inner {
     padding-top: 350px;
     max-width: 700px;
-
+    z-index: 3000;
+    position: relative;
+    text-shadow: var(--shadow-md);
   }
 
   &__subtitle {
@@ -44,14 +46,20 @@
     line-height: 54px;
     font-weight: 700;
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    // color: darkred;
+    color: var(--white);
   }
 
   &__text {
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    color: var(--white);
   }
 
   &__btn {
     padding: 10px 20px;
+    color: var(--white);
   }
 }
 
