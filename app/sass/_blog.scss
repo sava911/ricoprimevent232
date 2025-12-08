@@ -1,0 +1,40 @@
+.blog {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__info {}
+
+  &__title {
+    padding-top: 35px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+    max-width: 950px;
+    margin-bottom: 40px;
+
+    span {
+      color: var(--acc-color);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .services__item {
+    height: 400px;
+  }
+
+  .services__item-subtitle {
+    font-family: var(--font-unbounded);
+
+  }
+}

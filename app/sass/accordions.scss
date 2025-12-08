@@ -1,0 +1,99 @@
+.accordions {
+  margin-bottom: 120px;
+
+  .accordions__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .accordions__title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+    max-width: 950px;
+    margin-bottom: 40px;
+
+    span {
+      color: var(--acc-color);
+    }
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+  }
+
+  .accordion .accordion-item {
+    // background-color: var(--background-color);
+    border-bottom: 1px solid var(--acc-color);
+    // border-radius: 5px;
+  }
+
+  .accordion .accordion-item .accordion-item-description-wrapper hr {
+    border: none;
+    // border-top: 1px solid var(--bg);
+    visibility: visible;
+  }
+
+  .accordion .accordion-item.open .accordion-item-description-wrapper hr {
+    visibility: visible;
+  }
+
+  .accordion .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    font-weight: 600;
+  }
+
+  .accordion .accordion-item .accordion-item-header .accordion-item-header-icon {
+    transition: all 0.2s ease;
+  }
+
+  .accordion .accordion-item.open .accordion-item-header .accordion-item-header-icon {
+    transform: rotate(-45deg);
+
+    background: var(--red);
+  }
+
+  .accordion .accordion-item .accordion-item-description-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .accordion .accordion-item.open .accordion-item-description-wrapper {
+    grid-template-rows: 1fr;
+  }
+
+  .accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description {
+    min-height: 0;
+  }
+
+  .accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description p {
+    padding: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1190px) {
+  .accordions__inner {
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr))
+  }
+}
+
+@media (max-width: 550px) {
+  .accordions__inner {
+    gap: 0;
+  }
+}

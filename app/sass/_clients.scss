@@ -1,0 +1,41 @@
+.clients {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+    max-width: 950px;
+
+    span {
+      color: var(--acc-color);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    // filter: brightness(0) invert(1);
+    border: 3px solid var(--white);
+    border-radius: 15px;
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover {
+      border: 3px solid var(--acc-color);
+    }
+  }
+}
