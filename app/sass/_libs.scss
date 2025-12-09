@@ -1,0 +1,235 @@
+// modal
+/* Overlay with smooth blur + dark tone */
+.popup-modal__input,
+.popup-modal__area {
+  text-transform: uppercase;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 18px;
+  // background: linear-gradient(135deg, var(--acc-color), #0aa);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--acc-color);
+  box-shadow: 0 0 10px var(--acc-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.popup-modal__area {
+  height: 100px;
+}
+
+
+
+.popup-modal__leb {
+  font-size: 18px;
+  margin-left: 12px;
+
+}
+
+.popup-modal__btn {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+
+.popup-modal__chek {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+
+}
+
+/* Кастомный чекбокс в стиле сайта */
+.popup-modal__chek+span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.popup-modal__chek+span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid var(--acc-color);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.popup-modal__chek:checked+span::before {
+  background-color: var(--acc-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23030810' d='M10.3.9L4.1 7.1 1.7 4.7.9 5.5 4.1 8.7 11.1 1.7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-modal__chek:focus+span::before {
+  box-shadow: 0 0 5px var(--acc-color);
+}
+
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Neon-glass popup box */
+.popup-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 90%;
+  padding: 40px 30px;
+  position: relative;
+  animation: fadeInUp 0.4s ease;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  color: #fff;
+  // text-align: center;
+}
+
+/* Close button styled with glow */
+.close-popup {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--acc-color);
+  cursor: pointer;
+  text-shadow: 0 0 5px var(--acc-color), 0 0 10px var(--acc-color);
+}
+
+/* Popup title with neon glow */
+.popup-title {
+  font-size: 2rem;
+  color: var(--acc-color);
+  text-shadow: 0 0 10px var(--acc-color), 0 0 20px var(--acc-color);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+
+}
+
+/* Popup content with slight opacity */
+.popup-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Button to trigger popup */
+.trigger-popup {
+  text-transform: uppercase;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 18px;
+  // background: linear-gradient(135deg, var(--acc-color), #0aa);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--acc-color);
+  box-shadow: 0 0 10px var(--acc-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trigger-popup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--acc-color);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Z-index wrapper */
+.site-popups {
+  position: relative;
+  z-index: 999;
+}
+
+#oopss {
+  background: linear-gradient(-45deg, #fff300, #efe400);
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5em;
+  z-index: 9999;
+}
+
+#oopss #error-text {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Shabnam', Tahoma, sans-serif;
+  color: #000;
+  direction: rtl;
+}
+
+#oopss #error-text img {
+  margin: 85px auto 20px;
+  height: 342px;
+}
+
+#oopss #error-text span {
+  position: relative;
+  font-size: 3.3em;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+#oopss #error-text p.p-a {
+  font-size: 19px;
+  margin: 30px 0 15px 0;
+}
+
+#oopss #error-text p.p-b {
+  font-size: 15px;
+}
+
+#oopss #error-text .back {
+  background: #fff;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 2em auto 0;
+  padding: .7em 2em;
+  border-radius: 500px;
+  box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #fff300;
+  font-weight: 900;
+  transition: all 300ms ease;
+}
+
+#oopss #error-text .back:hover {
+  -webkit-transform: translateY(-13px);
+  transform: translateY(-13px);
+  box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
+}
