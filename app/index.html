@@ -81,10 +81,10 @@
         <form action="">
           <div>
             <label class="popup-modal__leb" for="fullName">Имя</label>
-            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
+            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Иван Иванов"
               required>
             <label class="popup-modal__leb" for="phone">Телефона</label>
-            <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+            <input class="popup-modal__input  phones" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
               required>
           </div>
           <label class="popup-modal__leb" for="textarea">Проблема</label>
@@ -216,17 +216,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="banner">
-      <div class="container">
-        <div class="banner__inner">
-          <h2 class="banner__subtitle">Премиальное ивент агенство в Москве</h2>
-          <h1 class="banner__title">Даем энергию и объединяем людей через вкусную еду </h1>
-          <p class="banner__text">Мы верим, что еда — это не просто способ утолить голод, это возможность поделиться
-            теплом, радостью и позитивом.</p>
-          <button class="banner__btn btn">Заказать звонок</button>
-        </div>
-      </div>
-    </section> -->
+
     <section id="about" class="about">
       <div class="container">
         <div class="about__inner">
@@ -282,9 +272,9 @@
                   <span></span>
                   <p>Довольных клиентов</p>
                 </div>
-                <div class="item wow fadeInUpBig animated animated" data-number="2000" style="visibility: visible;">
+                <div class="item wow fadeInUpBig animated animated" data-number="100" style="visibility: visible;">
                   <!-- <i class="fa fa-coffee"></i> -->
-                  <p id="number3" class="number">2000</p>
+                  <p id="number3" class="number">100</p>
                   <span></span>
                   <p>Партнеров и поставщиков</p>
                 </div>
@@ -311,7 +301,7 @@
             saepe quibusdam adipisci veniam!</p> -->
           <div class="services__grid-top">
             <a href="!#" class="services__item" style="background-image: url('images/ser_1.jpg');">
-              <h4 class="services__item-subtitle">Новости</h4>
+              <h4 class="services__item-subtitle">услуги</h4>
               <div class="services__item-wrap">
                 <h3 class="services__item-title">Банкет</h3>
                 <p class="services__item-text">Мы предлагаем организацию банкетов любого масштаба и формата, будь то
@@ -322,7 +312,7 @@
               </div>
             </a>
             <a href="!#" class="services__item" style="background-image: url('images/editor-574058.png');">
-              <h4 class="services__item-subtitle">Новости</h4>
+              <h4 class="services__item-subtitle">услуги</h4>
               <div class="services__item-wrap">
                 <h3 class="services__item-title">Кейтеринг</h3>
                 <p class="services__item-text">Мы предлагаем высококачественный кейтеринг для любых мероприятий. Наши
@@ -334,7 +324,7 @@
           </div>
           <div class="services__grid-bottom">
             <a href="!#" class="services__item" style="background-image: url('images/ser_2.jpg');">
-              <h4 class="services__item-subtitle">Новости</h4>
+              <h4 class="services__item-subtitle">услуги</h4>
               <div class="services__item-wrap">
                 <h3 class="services__item-title">Фуршет</h3>
                 <p class="services__item-text">Организуем элегантные фуршеты, которые создадут атмосферу изысканности и
@@ -343,7 +333,7 @@
               </div>
             </a>
             <a href="!#" class="services__item" style="background-image: url('images/ser_3.jpg');">
-              <h4 class="services__item-subtitle">Новости</h4>
+              <h4 class="services__item-subtitle">услуги</h4>
               <div class="services__item-wrap">
                 <h3 class="services__item-title">Семейные торжества</h3>
                 <p class="services__item-text">Мы знаем, как важно сделать семейные праздники особенными. Наши услуги
@@ -353,7 +343,7 @@
               </div>
             </a>
             <a href="!#" class="services__item" style="background-image: url('images/ser_4.jpg');">
-              <h4 class="services__item-subtitle">Новости</h4>
+              <h4 class="services__item-subtitle">услуги</h4>
               <div class="services__item-wrap">
                 <h3 class="services__item-title">Дни рождения</h3>
                 <p class="services__item-text">Празднуйте дни рождения с нами! Мы предлагаем уникальные сценарии и
@@ -384,7 +374,8 @@
           <form action="">
             <div>
               <input class="form-text__input" type="text" id="fullName" name="fullName" placeholder="*Имя" required>
-              <input class="form-text__input" type="tel" id="phone" name="phone" placeholder="*Телефона" required>
+              <input class="form-text__input phones" type="tel" id="phone" name="phone" placeholder="*Телефона"
+                required>
             </div>
             <label class="form-top__leb" for="textarea">Опишите событие</label>
             <textarea class="form-text__area" name="textarea" id="textarea"></textarea>
@@ -404,44 +395,49 @@
         <h2 class="advantages__title">Наши преимущества</h2>
         <div class="advantages__items">
           <div class="advantages__item">
-            <img src="images/icons/line-chart.png" alt="">
+            <img src="images/icons/hugeicons_star-award-01.svg" alt="">
+            <h3 class="advantages__item-title">Профессионализм</h3>
+            <p class="advantages__item-text">Основной ресурс нашей компании — команда высококвалифицированных
+              сотрудников, влюбленных в свое дело. Мы умеем находить
+              уникальный подход к каждому клиенту и успешно решать самые сложные вопросы</p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/icons/Group.svg" alt="">
+            <h3 class="advantages__item-title">Оперативность</h3>
+            <p class="advantages__item-text">Работаем с 11:00 до 23:00, оперативно реагируя на любые запросы клиентов и
+              быстро находим наилучшие решения ваших задач.</p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/icons/streamline-ultimate_optimization-graph.svg" alt="">
             <h3 class="advantages__item-title">Оптимизация</h3>
-            <p class="advantages__item-text">Вашего времени и ресурсов, делая наше сотрудничество максимально
-              эффективным и качественным.</p>
+            <p class="advantages__item-text">Наше агентство гарантирует вам оптимизацию всех процессов сотрудничества,
+              обеспечивая максимальную эффективность и
+              высокое качество оказываемых услуг.</p>
           </div>
 
+
+
           <div class="advantages__item">
-            <img src="images/icons/clock.png" alt="">
-            <h3 class="advantages__item-title">Оперативность</h3>
-            <p class="advantages__item-text">На связи 24/7, всегда оперативно реагируем на ваши пожелания находя лучшие
-              решения.</p>
-          </div>
-          <div class="advantages__item">
-            <img src="images/icons/award.png" alt="">
-            <h3 class="advantages__item-title">Профессионализм</h3>
-            <p class="advantages__item-text">Самый главный актив компании-профессиональные сотрудники, увлеченные своим
-              делом, знают как найти индивидуальный подход
-              к каждому клиенту и решить любой вопрос.</p>
-          </div>
-          <div class="advantages__item">
-            <img src="images/icons/settings.png" alt="">
+            <img src="images/icons/jam_settings-alt.svg" alt="">
             <h3 class="advantages__item-title">Гибкость</h3>
-            <p class="advantages__item-text">Мы лояльны и гибкие в ценообразовании. Никому не интересны некачественных
-              решения, мы знаем как найти правильный баланс
-              между ценой и качеством. И да, мы знаем, что такое предоплата.</p>
+            <p class="advantages__item-text">Предлагая лояльный и гибкий подход к формированию стоимости наших услуг, мы
+              гарантируем оптимальное соотношение цены и
+              качества. Понимаем важность каждого проекта и предлагаем индивидуальные условия оплаты.</p>
           </div>
           <div class="advantages__item">
-            <img src="images/icons/idea.png" alt="">
+            <img src="images/icons/streamline-freehand_design-process-pen-idea.svg" alt="">
             <h3 class="advantages__item-title">Креатив</h3>
-            <p class="advantages__item-text">Готовы не только придумать, но и реализовать нестандартные решения любой
-              сложности.</p>
+            <p class="advantages__item-text">Мы способны предложить оригинальные идеи и воплощение проектов любой
+              сложности, выходя далеко за рамки стандартных
+              решений.</p>
           </div>
           <div class="advantages__item">
-            <img src="images/icons/users.png" alt="">
+            <img src="images/icons/fa7-solid_users.svg" alt="">
             <h3 class="advantages__item-title">Командность</h3>
-            <p class="advantages__item-text">WE=МЫ. Работа над событием-это партнерство, где нет «Я», есть совместный
-              труд и доброжелательное сотрудничество клиента
-              и агентства.</p>
+            <p class="advantages__item-text">Работа над проектом — это тесное партнерство, основанное на доверии и
+              сотрудничестве. Наши специалисты работают
+              совместно с вами, стремясь создать продукт наивысшего уровня, превратив любое мероприятие в успешное
+              событие.</p>
           </div>
         </div>
     </section>
@@ -456,7 +452,7 @@
               высшем уровне!</p>
             <p class="stages__text">Следуя этим шагам, вы сможете организовать мероприятие, которое запомнится надолго
             </p>
-            <button class="stages__btn btn">Подробниее</button>
+            <button class="stages__btn btn popup" data-popup-id="examplePopup">Подробниее</button>
           </div>
           <div class="stages__items">
 
@@ -537,12 +533,12 @@
           масштабных корпоративных банкетов.</p>
         <div class="gallery__btn btn">МЕНЮ</div>
         <div class="gallery-wrap">
-          <div class="item " style="background-image: url('images/salat.jpg');"></div>
-          <div class="item" style="background-image: url('images/frut.jpg');"></div>
-          <div class="item" style="background-image: url('images/zacus.jpg');"></div>
-          <div class="item" style="background-image: url('images/tuna.jpg');"></div>
-          <div class="item" style="background-image: url('images/cheess.jpg');"></div>
-          <div class="item" style="background-image: url('images/fish.jpg');"></div>
+          <div class="item " style="background-image: url('images/menu/menu_1.jpg');"></div>
+          <div class="item" style="background-image: url('images/menu/menu_2.jpg');"></div>
+          <div class="item" style="background-image: url('images/menu/menu_3.jpg');"></div>
+          <div class="item" style="background-image: url('images/menu/menu_4.jpg');"></div>
+          <div class="item" style="background-image: url('images/menu/menu_5.jpg');"></div>
+          <div class="item" style="background-image: url('images/menu/menu_6.jpg');"></div>
         </div>
       </div>
     </section>
@@ -551,7 +547,7 @@
       <div class="container">
         <div class="form-strok__inner">
           <div class="form-strok__text">Остались вопросы ?</div>
-          <button class="form-strok__btn btn">Обратный звонок</button>
+          <button class="form-strok__btn btn popup" data-popup-id="examplePopup">Обратный звонок</button>
         </div>
       </div>
     </div>
@@ -565,38 +561,51 @@
             <div class="services__item" style="background-image: url('images/blog_3.jpg');">
               <h4 class="services__item-subtitle">12.12.25</h4>
               <div class="services__item-wrap">
-                <h3 class="services__item-title">Дни рождения</h3>
-                <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="services__item-title">Лучшие локации для проведения вашего мероприятия
+                </h3>
+                <p class="services__item-text">Ищете подходящее пространство для своего важного события? Здесь собраны
+                  лучшие площадки, подходящие для любых целей — от
+                  камерных вечеринок до крупных корпоративных мероприятий. Каждая локация уникальна своей атмосферой,
+                  удобством
+                  расположения и возможностями оформления.</p>
               </div>
             </div>
           </div>
           <div class="blog__items">
-            <div class="services__item" style="background-image: url('images/blog_1.jpg');">
+            <div class="services__item" style="background-image: url('images/blog/flaver.jpg');">
               <h4 class="services__item-subtitle">12.12.25</h4>
               <div class="services__item-wrap">
-                <h3 class="services__item-title">Дни рождения</h3>
-                <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="services__item-title">Оформление цветами мероприятие</h3>
+                <p class="services__item-text">Создаем атмосферу праздника для вашего мероприятия</p>
               </div>
             </div>
             <div class="services__item" style="background-image: url('images/blog_2.jpg');">
               <h4 class="services__item-subtitle">12.12.25</h4>
               <div class="services__item-wrap">
-                <h3 class="services__item-title">Дни рождения</h3>
-                <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="services__item-title">Как устроить праздник мечты в тесном семейном кругу</h3>
+                <p class="services__item-text">Семейные праздники — особая категория мероприятий, наполненных теплом,
+                  искренними эмоциями и близкими сердцу людьми.
+                  Организация подобного события предполагает внимание к деталям, создание атмосферы домашнего уюта и
+                  возможность
+                  насладиться каждым моментом вместе с родными</p>
               </div>
             </div>
             <div class="services__item" style="background-image: url('images/blog_5.jpg');">
               <h4 class="services__item-subtitle">12.12.25</h4>
               <div class="services__item-wrap">
-                <h3 class="services__item-title">Дни рождения</h3>
-                <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="services__item-title">Полноценное обслуживание мероприятия</h3>
+                <p class="services__item-text">Мы предоставляем полный спектр услуг, начиная от разработки концепции и
+                  заканчивая детальной организацией процесса</p>
               </div>
             </div>
             <div class="services__item" style="background-image: url('images/blog_4.jpg');">
               <h4 class="services__item-subtitle">12.12.25</h4>
               <div class="services__item-wrap">
-                <h3 class="services__item-title">Дни рождения</h3>
-                <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="services__item-title">Правильный подбор алкоголя для мероприятия</h3>
+                <p class="services__item-text">Организуя любое событие, важно учитывать вкусы гостей и разнообразие
+                  напитков, чтобы каждый мог насладиться своим
+                  любимым напитком. Вот простой алгоритм подбора алкоголя, который подойдет практически любому
+                  мероприятию</p>
               </div>
             </div>
           </div>
@@ -618,7 +627,7 @@
               уровня. Мы гарантируем, что ваше событие будет
               незабываемым!</p>
             <div class="developing__btn-wr">
-              <button href="#" class="developing__btn btn">Подробнее</button>
+              <button href="#" class="developing__btn btn popup" data-popup-id="examplePopup">Подробнее</button>
             </div>
           </div>
 
@@ -714,12 +723,12 @@
             <form class="one-form__form">
               <input type="hidden" name="form_id" value="form1">
               <input class="one-form__input" type="text" name="name" required="" placeholder="Ваше имя*">
-              <input class="one-form__input" id="phone-banner" type="text" name="phone" required=""
+              <input class="one-form__input phones" id="phone-banner" type="text" name="phone" required=""
                 placeholder="Ваш номер телефона*">
               <button class="one-form__btn btn" type="submit">Оставить заявку</button>
 
             </form>
-            <p class="one-form__subtext"> Нажимая «Отправить» вы принимаете условия пользовательского соглашения и
+            <p class="one-form__subtext">🔒 Нажимая «Отправить» вы принимаете условия пользовательского соглашения и
               даёте согласие
               на обработку персональных данных.</p>
           </div>

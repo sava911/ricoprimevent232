@@ -1,8 +1,7 @@
 .services {
   margin-bottom: 120px;
 
-  &__inner {
-  }
+  &__inner {}
 
   &__title {
     padding-top: 80px;
@@ -65,7 +64,7 @@
     color: var(--acc-color);
     backdrop-filter: blur(10px);
     margin-bottom: 10px;
-    max-width: 120px;
+    max-width: 10px;
     padding: 10px;
     border-left: 3px solid var(--acc-color);
   }
@@ -95,5 +94,4 @@
   }
 }
 
-.container {
-}
+.container {}

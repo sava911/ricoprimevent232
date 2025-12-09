@@ -33,6 +33,17 @@
     height: 400px;
   }
 
+  .services__item-title {
+    display: -webkit-box;
+    /* Поддержка старых браузеров */
+    -webkit-box-orient: vertical;
+    /* Ориентация боксов */
+    -webkit-line-clamp: 3;
+    /* Ограничение в 1 строки */
+    overflow: hidden;
+    // font-size: 18px;
+  }
+
   .services__item-subtitle {
     font-family: var(--font-unbounded);
 
