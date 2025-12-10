@@ -32,6 +32,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',
     'app/js/main.js',
     'app/js/slider.js',
+    'app/js/swipermenu.js',
     'app/js/telMask.js'
   ])
     .pipe(concat('main.min.js'))

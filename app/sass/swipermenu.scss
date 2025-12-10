@@ -1,0 +1,334 @@
+.swipermenu {
+  background: var(--acc-color);
+  margin-bottom: 120px;
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+    text-align: center;
+  }
+
+  .base-template__text {
+    margin-bottom: 60px;
+  }
+
+  .base-template__content {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.25rem;
+  }
+
+  /* Slider Instance */
+
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    height: 580px;
+    // background-color: #000000;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .heading {
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    left: 7%;
+    display: flex;
+    max-width: 75px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Slider Background */
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.8s ease;
+    filter: blur(5px);
+  }
+
+  .background-item.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .background-item.fade-in {
+    opacity: 1;
+  }
+
+  .background-item.fade-out {
+    opacity: 0;
+  }
+
+  /* Slider Cards */
+
+  .slider-container {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transform: none !important;
+  }
+
+  .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    max-width: 460px;
+    height: 380px;
+    margin-top: 75px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateX(100%) scale(1);
+  }
+
+  .card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .card.swiper-slide-active {
+    z-index: 3;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 0.8s ease, transform 1s ease, opacity 1s ease;
+  }
+
+  .card.swiper-slide.enter {
+    z-index: 3;
+    opacity: 1;
+    clip-path: inset(0 0 0 100%);
+    transform: translateX(0) scale(1);
+  }
+
+  .card.swiper-slide.enter-active {
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 1.5s ease;
+  }
+
+  .card.swiper-slide.exit {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  .card.swiper-slide.exit-active {
+    opacity: 0;
+    transform: translateX(60px) scale(0.7);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+  /* Slider Controls */
+
+  .controls {
+    position: absolute;
+    bottom: 124px;
+    right: 65px;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.125rem;
+  }
+
+  .controls button {
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.35s ease;
+  }
+
+  .controls button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .controls button:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  /* Slider Pagination */
+
+  .pagination {
+    position: absolute;
+    top: 13%;
+    right: 65px;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 1.25rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .pagination-item {
+    display: inline-block;
+    transition: opacity 0.4s ease;
+  }
+
+  .pagination-item.fade-out {
+    opacity: 0;
+  }
+
+  /* Slider Data */
+
+  .data {
+    position: absolute;
+    bottom: 35px;
+    left: 21%;
+    z-index: 5;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+  }
+
+  .data-item {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+
+  .data-item.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .data-title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .data-text {
+    margin: 8px 0 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Responsive */
+
+  @media screen and (max-width: 960px) {
+    .card {
+      max-width: 300px;
+      height: 350px;
+    }
+
+    .pagination {
+      top: 5%;
+      right: 120px;
+    }
+
+    .heading {
+      top: 5%;
+      left: 17%;
+      max-width: 100%;
+    }
+
+    .data {
+      left: 17%;
+      bottom: 11%;
+      max-width: 200px;
+    }
+
+    .controls {
+      right: 120px;
+      bottom: 20%;
+    }
+
+    .controls button {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .slider-wrapper {
+      height: 530px;
+    }
+
+    .pagination {
+      right: 20px;
+    }
+
+    .heading {
+      left: 20px;
+    }
+
+    .data {
+      left: 20px;
+      bottom: 2%;
+    }
+
+    .controls {
+      right: 20px;
+      bottom: 12%;
+    }
+  }
+}

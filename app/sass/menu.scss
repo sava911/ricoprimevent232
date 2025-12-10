@@ -1,0 +1,91 @@
+.listmenu {
+  margin-bottom: 40px;
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+
+    span {
+      color: var(--acc-color);
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 80px;
+    max-width: 600px;
+  }
+
+  &__inner {}
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__item-title {
+    font-family: var(--font-unbounded);
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--acc-color);
+    width: fit-content;
+    padding: 5px 0px;
+    // border-radius: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+.itemWrap {
+  margin-bottom: 10px;
+
+}
+
+/*Displaying flex and justifying content space between to take up the width of the box*/
+.itemNameWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemName {
+  // font-size: 1.8em;
+  font-size: 24px;
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+/*The Radial Gradient background is used as the dots. The position being at 90% helps line up the dots with the price which is just a little smaller than the description. Flex-grow: 2 makes the middle spread out to take up the remaining space. */
+.itemMiddle {
+  vertical-align: bottom;
+  background-image: radial-gradient(var(--acc-color) 1px, var(--bg-color) 0px);
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+  background-position: left 70%;
+  flex-grow: 2;
+}
+
+.itemPrice {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  padding-right: 5px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '\20BD';
+    right: -5px;
+  }
+
+}
+
+.itemDescription {
+  font-size: 18px;
+  font-style: italic;
+
+}

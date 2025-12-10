@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://bato-web-agency.github.io/bato-shared/css/template.css?v=2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Rico Prim Event</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__left">
+          <div class="logo">
+            <!-- <img src="images/icons/logo2.jpg" alt="Логотип"> -->
+            <span>Rico<i>Prim</i>Event</span>
+            <!-- <b>Santekhnik v 
+                        Elektrik</b> -->
+          </div>
+
+
+
+          <button class="burger-menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="header__nav">
+            <nav>
+              <ul class="menu">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#footer">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__nav-icons">
+              <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+              <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+              <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+            </div>
+            <a class="header__nav-tel" href="tel:+79968552494">+7 996-855-24-94</a>
+
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__social">
+            <div class="header__icons">
+              <a href="https://wa.me/+79968552494"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+              <a href="https://t.me/AG_SAVCHENKO"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+              <a href="tel:+79968552494"><img src="images/icons/tel2.svg" alt="tel"></a>
+            </div>
+          </div>
+          <a class="header__tel" href="tel:+79968552494">+7 996-855-24-94</a>
+
+        </div>
+
+        <!-- <button type="button" class="blue_btn btn popup" data-popup-id="examplePopup">
+          <span class="blue_btn__title ">Вызвать мастера</span>
+        </button> -->
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Append Popups Here -->
+  <div class="site-popups"></div>
+
+  <!-- Hidden Popup Template (Can be cloned or reused) -->
+  <div id="examplePopup" class="popup-modal" style="display: none;">
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <button class="close-popup">&times;</button>
+        <!-- <h2 class="popup-title">Создадим партнерство?</h2> -->
+        <form action="">
+          <div>
+            <label class="popup-modal__leb" for="fullName">Имя</label>
+            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Иван Иванов"
+              required>
+            <label class="popup-modal__leb" for="phone">Телефона</label>
+            <input class="popup-modal__input  phones" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+              required>
+          </div>
+          <label class="popup-modal__leb" for="textarea">Проблема</label>
+          <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+
+          <label>
+            <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
+              конфиденциальности</span>
+          </label>
+
+          <button type="submit" class="popup-modal__btn btn">Отправить</button>
+          <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
+            <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="banner">
+      <div class="wrapper-slider">
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="video">
+                  <video autoplay loop muted playsinline class="w-full h-full object-cover absolute inset-0" poster="">
+                    <source src="images/video/baner-arusy.MOV" type="video/mp4">
+                    Tu navegador no admite la reproducción de video.
+                  </video>
+                </div>
+
+                <div class="container">
+                  <div class="banner__inner">
+
+                    <h2 class="banner__bigtitle">Наше меню</h2>
+
+                    <button class="banner__bigbtn btn  popup" data-popup-id="examplePopup">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover absolute inset-0" poster="">
+                  <source src="images/video/baner-arusy.MOV" type="video/mp4">
+                  Tu navegador no admite la reproducción de video.
+                </video>
+                <div class="container">
+                  <div class="banner__inner">
+
+                    <h2 class="banner__bigtitle">Наше меню</h2>
+
+                    <button class="banner__bigbtn btn  popup" data-popup-id="examplePopup">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <picture>
+                  <img src="images/foto_2.png" alt="image">
+                </picture>
+                <div class="container">
+                  <div class="banner__inner">
+
+                    <h2 class="banner__bigtitle">Наше меню</h2>
+
+                    <button class="banner__bigbtn btn  popup" data-popup-id="examplePopup">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <picture>
+                  <img src="images/foto.png" alt="image">
+                </picture>
+                <div class="container">
+                  <div class="banner__inner">
+
+                    <h2 class="banner__bigtitle">Наше меню</h2>
+
+                    <button class="banner__bigbtn btn  popup" data-popup-id="examplePopup">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <picture>
+                  <img src="images/editor-574058.png" alt="image">
+                </picture>
+                <div class="container">
+                  <div class="banner__inner">
+
+                    <h2 class="banner__bigtitle">Наше меню</h2>
+
+                    <button class="banner__bigbtn btn  popup" data-popup-id="examplePopup">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- listmenu -->
+    <section class="listmenu">
+      <div class="container">
+        <h1 class="listmenu__title">Наше <span>меню</span> — это не просто еда, а атмосфера праздника!</h1>
+        <p class="listmenu__text">Мы предлагаем разнообразные блюда, которые подойдут для любого мероприятия: от
+          элегантных коктейльных вечеринок до
+          масштабных корпоративных банкетов.</p>
+        <div class="listmenu__inner">
+          <div class="listmenu__items">
+            <div class="listmenu__item">
+              <h3 class="listmenu__item-title">Холодные закуски</h3>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сезонный салат</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1600 </span>
+                </div>
+                <span class="itemDescription">Устрици</span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Лосось</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1500 </span>
+                </div>
+                <span class="itemDescription">English Muffin, Poached Eggs, Country Ham, Hollondaise. </span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сибас</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1200 </span>
+                </div>
+                <span class="itemDescription">Цена за 100г. крудо татаки запечь</span>
+              </div>
+
+            </div>
+            <div class="listmenu__item">
+              <h3 class="listmenu__item-title">Холодные закуски</h3>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сезонный салат</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1600 </span>
+                </div>
+                <span class="itemDescription">Устрици</span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Лосось</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1500 </span>
+                </div>
+                <span class="itemDescription">English Muffin, Poached Eggs, Country Ham, Hollondaise. </span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сибас</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1200 </span>
+                </div>
+                <span class="itemDescription">Цена за 100г. крудо татаки запечь</span>
+              </div>
+
+            </div>
+            <div class="listmenu__item">
+              <h3 class="listmenu__item-title">Холодные закуски</h3>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сезонный салат</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1600 </span>
+                </div>
+                <span class="itemDescription">Устрици</span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Лосось</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1500 </span>
+                </div>
+                <span class="itemDescription">English Muffin, Poached Eggs, Country Ham, Hollondaise. </span>
+              </div>
+              <div class="itemWrap">
+                <div class="itemNameWrap">
+                  <span class="itemName">Сибас</span>
+                  <span class="itemMiddle"></span>
+                  <span class="itemPrice">1200 </span>
+                </div>
+                <span class="itemDescription">Цена за 100г. крудо татаки запечь</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="swipermenu">
+      <div class="preview">
+        <img src="https://bato-web-agency.github.io/bato-shared/img/section-slider-preview.jpg?v=1.2">
+      </div>
+
+      <section class="base-template">
+        <div class="container base-template__wrapper">
+          <h2 class="swipermenu__title">Фото галерея </h2>
+
+          <div class="base-template__content">
+
+            <!-- Slider Section -->
+
+            <div class="slider-wrapper">
+              <div class="swiper slider" id="slider">
+                <h2 class="heading">Галерея</h2>
+
+                <div class="pagination">
+                  <span data-item="current" class="pagination-item">01</span>/
+                  <span data-item="total" class="pagination-item">06</span>
+                </div>
+
+                <div class="background">
+                  <!-- Data propagated from JavaScript -->
+                </div>
+
+                <div class="swiper-wrapper slider-container">
+
+                  <!-- Slide #1 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_1.jpg" data-title="Brick Loft Living"
+                    data-text="Kyiv, Ukraine">
+                    <img src="images/menu/menu_1.jpg" alt="Brick Loft Living — Kyiv, Ukraine" width="2000" height="1143"
+                      loading="lazy">
+                  </div>
+
+                  <!-- Slide #2 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_2.jpg" data-title="Calm Neutrals"
+                    data-text="Munich, Germany">
+                    <img src="images/menu/menu_2.jpg" alt="Calm Neutrals — Munich, Germany" width="2000" height="1333"
+                      loading="lazy">
+                  </div>
+
+                  <!-- Slide #3 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_3.jpg" data-title="Wooden Harmony"
+                    data-text="Vilnius, Lithuania">
+                    <img src="images/menu/menu_3.jpg" alt="Wooden Harmony — Vilnius, Lithuania" width="2000"
+                      height="1143" loading="lazy">
+                  </div>
+
+                  <!-- Slide #4 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_4.jpg" data-title="Modern Rustic"
+                    data-text="Lviv, Ukraine">
+                    <img src="images/menu/menu_4.jpg" alt="Modern Rustic — Lviv, Ukraine" width="2000" height="1333"
+                      loading="lazy">
+                  </div>
+
+                  <!-- Slide #5 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_5.jpg" data-title="Mild Warmth"
+                    data-text="Barcelona, Spain">
+                    <img src="images/menu/menu_5.jpg" alt="Mild Warmth — Barcelona, Spain" width="2000" height="1143"
+                      loading="lazy">
+                  </div>
+
+                  <!-- Slide #6 -->
+
+                  <div class="swiper-slide card" data-background="images/menu/menu_6.jpg" data-title="Dark Elegance"
+                    data-text="Warsaw, Poland">
+                    <img src="images/menu/menu_6.jpg" alt="Dark Elegance — Warsaw, Poland" width="2000" height="1143"
+                      loading="lazy">
+                  </div>
+                  <div class="swiper-slide card" data-background="images/menu/menu_6.jpg" data-title="Dark Elegance"
+                    data-text="Warsaw, Poland">
+                    <img src="images/menu/menu_6.jpg" alt="Dark Elegance — Warsaw, Poland" width="2000" height="1143"
+                      loading="lazy">
+                  </div>
+                </div>
+
+                <!-- Slider Controls -->
+
+                <div class="controls">
+                  <button id="nextSlide">NEXT</button>
+                  <button id="prevSlide" class="disabled">PREV</button>
+                </div>
+
+                <!-- Slider Headings -->
+
+                <div class="data">
+                  <div class="data-item active">
+                    <h3 class="data-title">
+                      <!-- Data propagated from JavaScript -->
+                    </h3>
+                    <p class="data-text">
+                      <!-- Data propagated from JavaScript -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- form-strok -->
+    <div class="form-strok">
+      <div class="container">
+        <div class="form-strok__inner">
+          <div class="form-strok__text">Остались вопросы ?</div>
+          <button class="form-strok__btn btn popup" data-popup-id="examplePopup">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+    <!-- blog -->
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+          <div class="blog__info">
+            <div class="blog__title">Найдите здесь актуальные события, <span>идеи для проведения мероприятий</span> и
+              полезные советы по организации.</div>
+            <div class="services__item" style="background-image: url('images/blog_3.jpg');">
+              <h4 class="services__item-subtitle">12.12.25</h4>
+              <div class="services__item-wrap">
+                <h3 class="services__item-title">Лучшие локации для проведения вашего мероприятия
+                </h3>
+                <p class="services__item-text">Ищете подходящее пространство для своего важного события? Здесь собраны
+                  лучшие площадки, подходящие для любых целей — от
+                  камерных вечеринок до крупных корпоративных мероприятий. Каждая локация уникальна своей атмосферой,
+                  удобством
+                  расположения и возможностями оформления.</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog__items">
+            <div class="services__item" style="background-image: url('images/blog/flaver.jpg');">
+              <h4 class="services__item-subtitle">12.12.25</h4>
+              <div class="services__item-wrap">
+                <h3 class="services__item-title">Оформление цветами мероприятие</h3>
+                <p class="services__item-text">Создаем атмосферу праздника для вашего мероприятия</p>
+              </div>
+            </div>
+            <div class="services__item" style="background-image: url('images/blog_2.jpg');">
+              <h4 class="services__item-subtitle">12.12.25</h4>
+              <div class="services__item-wrap">
+                <h3 class="services__item-title">Как устроить праздник мечты в тесном семейном кругу</h3>
+                <p class="services__item-text">Семейные праздники — особая категория мероприятий, наполненных теплом,
+                  искренними эмоциями и близкими сердцу людьми.
+                  Организация подобного события предполагает внимание к деталям, создание атмосферы домашнего уюта и
+                  возможность
+                  насладиться каждым моментом вместе с родными</p>
+              </div>
+            </div>
+            <div class="services__item" style="background-image: url('images/blog_5.jpg');">
+              <h4 class="services__item-subtitle">12.12.25</h4>
+              <div class="services__item-wrap">
+                <h3 class="services__item-title">Полноценное обслуживание мероприятия</h3>
+                <p class="services__item-text">Мы предоставляем полный спектр услуг, начиная от разработки концепции и
+                  заканчивая детальной организацией процесса</p>
+              </div>
+            </div>
+            <div class="services__item" style="background-image: url('images/blog_4.jpg');">
+              <h4 class="services__item-subtitle">12.12.25</h4>
+              <div class="services__item-wrap">
+                <h3 class="services__item-title">Правильный подбор алкоголя для мероприятия</h3>
+                <p class="services__item-text">Организуя любое событие, важно учитывать вкусы гостей и разнообразие
+                  напитков, чтобы каждый мог насладиться своим
+                  любимым напитком. Вот простой алгоритм подбора алкоголя, который подойдет практически любому
+                  мероприятию</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- one-form -->
+    <section class="one-form ">
+      <div class="container">
+        <div class="one-form__inner">
+          <div class="one-form__items">
+            <div class="one-form__item" style="background-image: url('images/blog_1.jpg');"></div>
+            <div class="one-form__item" style="background-image: url('images/blog_2.jpg');"></div>
+            <div class="one-form__item" style="background-image: url('images/blog_4.jpg');"></div>
+            <div class="one-form__item" style="background-image: url('images/blog_5.jpg');"></div>
+
+          </div>
+          <div class="one-form__info">
+            <h3 class="one-form__title">Все просто если работаешь с <span>профессионалами</span> </h3>
+            <form class="one-form__form">
+              <input type="hidden" name="form_id" value="form1">
+              <input class="one-form__input" type="text" name="name" required="" placeholder="Ваше имя*">
+              <input class="one-form__input phones" id="phone-banner" type="text" name="phone" required=""
+                placeholder="Ваш номер телефона*">
+              <button class="one-form__btn btn" type="submit">Оставить заявку</button>
+
+            </form>
+            <p class="one-form__subtext">🔒 Нажимая «Отправить» вы принимаете условия пользовательского соглашения и
+              даёте согласие
+              на обработку персональных данных.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- accordions -->
+    <section class="accordions">
+      <div class="container">
+        <h2 class="accordions__title">Часто задаваемые <span>вопросы</span>:</h2>
+        <div class="accordions__inner">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Какие услуги предлагает компания RICO Prim Event?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Мы предлагаем полный спектр услуг по организации мероприятий, включая разработку меню,
+                    приготовление блюд, оформление
+                    столов и обслуживание гостей. Наши шеф-повара создают уникальные блюда, подходящие для любого
+                    события.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Как выбрать подходящее меню для мероприятия?
+                </span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Выбор меню зависит от формата вашего мероприятия, предпочтений гостей и бюджета. Мы готовы
+                    предложить варианты меню,
+                    учитывая ваши пожелания и потребности.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Возможна ли доставка готовых блюд?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Да, мы предоставляем услугу доставки готовых блюд. Все блюда готовятся свежими и доставляются
+                    непосредственно перед
+                    началом мероприятия.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Предоставляете ли вы оборудование для сервировки?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Да, мы можем предоставить необходимое оборудование для сервировки, включая посуду, столовые приборы
+                    и декор..</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Есть ли у вас специальное предложение для вегетарианцев и
+                  веганов?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Конечно, наши повара могут разработать специальные меню для вегетарианцев и веганов, учитывая их
+                    предпочтения и
+                    ограничения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Можно ли заказать дегустацию блюд заранее?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Да, мы предлагаем возможность предварительной дегустации наших блюд, чтобы убедиться в качестве и
+                    вкусе.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Сколько времени занимает подготовка к мероприятию?
+                </span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Время подготовки зависит от масштаба мероприятия и количества участников. Обычно процесс подготовки
+                    занимает от одной до
+                    двух недель.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Предлагаете ли вы сопровождение мероприятия
+                  официантами?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Да, мы предоставляем профессиональных официантов, которые обеспечат комфортное обслуживание ваших
+                    гостей.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <span class="accordion-item-header-title">Какие формы оплаты принимаются?</span>
+                <img class="lucide lucide-chevron-down accordion-item-header-icon" width="20" height="20"
+                  src="images/icons/plus.svg" alt="plus">
+              </div>
+              <div class="accordion-item-description-wrapper">
+                <div class="accordion-item-description">
+                  <hr>
+                  <p>Мы принимаем оплату наличными, банковским переводом и картами.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--footer  -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Colonne 1 - À propos -->
+        <div class="footer-column">
+          <h3 class="logo">
+
+            <span>Rico<i>Prim</i>Event</span>
+
+          </h3>
+          <p>Мы открыты для сотрудничества и готовы воплотить ваши идеи в жизнь!
+            Свяжитесь с нами любым удобным способом, чтобы обсудить организацию вашего мероприятия и создать
+            неповторимую атмосферу
+            праздника вместе с командой профессионалов</p>
+
+          <div class="footer__social">
+            <button class="footer__social-btn btn ">Оставить заявку</button>
+            <div class="footer__social-link">
+              <a class="footer__social-icon btn" href="https://wa.me/+79968552494">whatsApp</a>
+              <a class="footer__social-icon btn" href="https://t.me/AG_SAVCHENKO">telegram</a>
+              <!-- <a class="footer__social-icon btn" href="tel:+79968552494">Позвонить</a> -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Colonne 2 - Liens rapides -->
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">План мероприятия</a></li>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Бриф</a></li>
+            <li><a href="#">Презентация</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 - Support -->
+        <div class="footer-column">
+          <h3>На карте</h3>
+
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A19fd5942acc2390f55caf96d3296c8dff4b1b05c326bcedc25c52e450aff2b6c&amp;source=constructor"
+            width="320" height="300" frameborder="0"></iframe>
+        </div>
+
+        <!-- Colonne 4 - Contact -->
+        <div id="footer" class="footer-column">
+          <h3>Контакты</h3>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <img src="images/icons/ph_map-pin-line.svg" alt="mail">
+
+              <span>6, стр.2 Ружейный пер.<br>55.743829, Москва, Россия</span>
+            </div>
+
+            <div class="contact-item">
+              <img src="images/icons/lucide_user-pen.svg" alt="mail">
+
+              <span><a href="tel:+79968552494">+7 996 855 24 94</a><br>Пн-Вс, 11-23:00</span>
+            </div>
+
+            <div class="contact-item">
+              <img src="images/icons/tabler_mail.svg" alt="mail">
+              <span>contact@ricoprimevent.ru<br>support@ricoprimevent.ru</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy;
+          Разработано <a class="webdev" href="#"> Restowebsite </a> | Все права защищены. | <a href="#">Юридическая
+            информация</a> | <a href="#">Политика
+            использования файлов cookie 🔒</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://bato-web-agency.github.io/bato-shared/js/preview.js?v=1.1"></script>
+  <!-- <script src="https://bato-web-agency.github.io/bato-shared/js/menu.js?v=1.2"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
