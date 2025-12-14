@@ -26,6 +26,27 @@
     text-shadow: var(--shadow-md);
   }
 
+  &__content {
+    padding-top: 350px;
+    // max-width: 700px;
+    z-index: 3000;
+    position: relative;
+    text-shadow: var(--shadow-md);
+    text-align: center;
+  }
+
+  &__bigtitle {
+    text-transform: uppercase;
+    font-family: var(--font-unbounded);
+    font-size: 85px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    // color: darkred;
+    color: var(--white);
+  }
+
   &__subtitle {
     // border: 1px solid #ccc;
     // border-radius: 15px;
@@ -55,6 +76,16 @@
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     color: var(--white);
+  }
+
+  &__bigbtn {
+    padding: 10px 20px;
+    color: var(--white);
+    min-width: 300px;
+    backdrop-filter: blur(10px);
+
+
+
   }
 
   &__btn {
